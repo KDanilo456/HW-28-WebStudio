@@ -302,7 +302,7 @@ div{
     height: 248px;
 }
 .block:nth-child(1)::before{
-    content: url(/img/antenna.png);
+    content: url(./img/antenna.png);
     width: 250px;
     height: 120px;
     display: block;
@@ -311,7 +311,7 @@ div{
     line-height: 180px;
 }
 .block:nth-child(2)::before{
-    content: url(/img/clock.png);
+    content: url(./img/clock.png);
     width: 253px;
     height: 120px;
     display: block;
@@ -320,7 +320,7 @@ div{
     line-height: 180px;
 }
 .block:nth-child(3)::before{
-    content: url(/img/diagram.png);
+    content: url(./img/diagram.png);
     width: 250px;
     height: 120px;
     display: block;
@@ -329,7 +329,7 @@ div{
     line-height: 180px;
 }
 .modern-technologies::before{
-    content: url(/img/astronaut.png);
+    content: url(./img/astronaut.png);
     width: 250px;
     height: 120px;
     display: block;
@@ -352,15 +352,13 @@ div{
 .nav-buttons :hover{
     box-shadow: 0px 2px 2px 0px #0000001F;
 }
-.notebook{
-    box-shadow: 1px 4px 6px 0px #00000029;
-}
+
 .button{
     box-shadow: 0px 4px 4px 0px #00000026;
     border: solid var(--blue);
 }
 .nav-site{
-    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/Img.png);
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./img/Img.png);
     background-repeat: no-repeat;
 }
 .instagram-svg{
@@ -1036,4 +1034,35 @@ textarea:focus{
 .contacts-navigate:hover::after{
     transform: translate(0, 30px);
     opacity: 1;
+}
+.pictures li:hover{
+    box-shadow: 1px 4px 6px 0px #00000029;
+}
+.overlay-text{
+    max-width: 322px;
+    max-height: 294px;
+    height: 294px;
+    font-size: 18px;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    position: absolute;
+    padding-top: 75px;
+    font-weight: 400;
+    color: white;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+}
+.overlay-div{
+    display: block;
+    overflow: hidden;
+    max-width: 370px;
+    max-height: 294px;
+    position: relative;
+}
+.picture-section:hover .overlay-text {
+    transform: translateY(-310px);
+}
+.overlay-div-resturant{
+    overflow: hidden;
 }
